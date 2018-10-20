@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<link rel="icon" href="img/icon.png">
+</head>
+
+<body class="scanlines">
+	<div id="link-catalog">
+		<p>[ root@localhost ~]# ./startpage</p>
+		<table>
+			<tr>
+				<td>Startpage 1.5.7 | Luke Hardin |&nbsp;</td>
+				<td id="date"></td>
+				<td>&nbsp;|&nbsp;</td>
+				<td id="weather"></td>
+			</tr>
+		</table>
+
+		<p>&gt; list personal</P>
+		<table>
+			<tr>
+				<td><a id="link" href="https://reddit.com">reddit</a></td>
+			</tr>
+			<tr>
+				<td><a id="link" href="https://www.youtube.com/">youtube</a></td>
+				<td><a id="link" href="https://www.amazon.com/">amazon</a></td>
+			</tr>
+		</table>
+		<p>&gt; list academic</p>
+		<table>
+			<tr>
+				<td><a id="link" href="https://elearn.uta.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_50_1">blackboard</a></td>
+				<td><a id="link" href="https://www.uta.edu/mymav/?tab=PAPP_GUEST">my_mav</a></td>
+				<td><a id="link" href="https://outlook.office.com/owa/">univ_email</a></td>
+			</tr>	
+		</table>
+		<p>&gt; list general</p>
+		<table>
+			<tr>
+				<td><a id="link" href="https://github.com/">github</a></td>
+				<td><a id="link" href="https://mail.google.com/">gmail</a></td>
+				<td><a id="link" href="https://mail.protonmail.com/">proton_mail</a></td>
+				<td><a id="link" href="https://mail.yahoo.com/">yahoo_mail</a></td>
+			</tr>
+			<tr>
+				<td><a id="link" href="https://www.trello.com">trello</a></td>
+			<tr>
+		</table>
+		<p>&gt; list reference</p>
+		<table>
+			<tr>
+				<td><a id="link" href="https://git-scm.com/doc">git</a></td>
+				<td><a id="link" href="http://devdocs.io/cpp/">c++</a></td>
+				<td><a id="link" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html">markdown_cheatsheet</a></td>
+			</tr>
+		</table>
+		<p>&gt; ^C</P>
+		<p>exiting...</p>
+		<div class="input"><input id="input" type="text"></div>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+<!-- Mansfield API: http://api.openweathermap.org/data/2.5/weather?id=4709013&units=imperial&appid=bb617c8eebae0d1c79c479dd6ad0aab3 -->
+
+</html>

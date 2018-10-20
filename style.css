@@ -1,0 +1,149 @@
+body {
+  background: #01321f;
+  font-family: Courier, consolas;
+  color: #00ed00;
+  text-shadow: 2px 2px 2px #333;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 25px;
+}
+
+#link-catalog {
+  margin: auto;
+  background-color: #000000;
+  border: 1px solid #ddd;
+  height: 90vh;
+  width: 90vw;
+  font-size: 25px;
+}
+
+#link-catalog p {
+  margin: 5px;
+}
+
+#link {
+  color: #00ed00;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+#link:hover {
+  color: #fff;
+}
+
+/* search bar */
+input{
+  margin-left: -50px;
+  margin-right: -5px;
+  display: inline-block;
+  font-family: Courier, monospace;
+  line-height: 25px;
+  font-size: 25px;
+  border: solid 1px black;
+  color: transparent;
+  text-shadow: 0 0 0 #00ed00;
+  background: transparent;
+}
+
+.input::before{
+  content: '[ root@localhost ~]#';
+  position: relative;
+  display: inline-block;
+  line-height: 25px;
+  font-size: 25px;
+  color: #00ed00;
+  min-width: 360px;
+}
+
+.input { 
+  display: inline-block;
+  line-height: 25px;
+  font-size: 25px;
+  color: #00ed00;
+}
+
+.input::after {
+  content: "";
+  top: 0;
+  right: -50px;
+  display: inline-block;
+  background-color: #00ed00;
+  vertical-align: top;
+  width: 10px;
+  height: 25px;
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+/* Scanlines */
+/* Credit Mehdi fromCodePen */
+/* https://codepen.io/meduzen/ */
+/* CSS .scanlines CLASS */
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+.scanlines:before, .scanlines:after {
+  display: block;
+  pointer-events: none;
+  content: '';
+  position: absolute;
+}
+.scanlines:before {
+  width: 100%;
+  height: 2px;
+  z-index: 2147483649;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.75;
+  -webkit-animation: scanline 6s linear infinite;
+          animation: scanline 6s linear infinite;
+}
+.scanlines:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483648;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
+  background-size: 100% 4px;
+  -webkit-animation: scanlines 1s steps(60) infinite;
+          animation: scanlines 1s steps(60) infinite;
+}
+
+/* ANIMATE UNIQUE SCANLINE */
+@-webkit-keyframes scanline {
+  0% {
+    -webkit-transform: translate3d(0, 200000%, 0);
+            transform: translate3d(0, 200000%, 0);
+  }
+}
+@keyframes scanline {
+  0% {
+    -webkit-transform: translate3d(0, 200000%, 0);
+            transform: translate3d(0, 200000%, 0);
+  }
+}
+@-webkit-keyframes scanlines {
+  0% {
+    background-position: 0 50%;
+  }
+}
+@keyframes scanlines {
+  0% {
+    background-position: 0 50%;
+  }
+}
+
